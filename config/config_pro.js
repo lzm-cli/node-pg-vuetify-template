@@ -1,3 +1,6 @@
+
+const SERVER_PORT = 9088
+
 const DATABASE_CONFIG = {
   host: 'localhost',
   port: 5432,
@@ -7,4 +10,5 @@ const DATABASE_CONFIG = {
 }
 
 
-module.exports = { DATABASE_CONFIG }
+
+module.exports = { DATABASE_CONFIG, SERVER_PORT }

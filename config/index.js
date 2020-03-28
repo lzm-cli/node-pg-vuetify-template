@@ -8,6 +8,6 @@ function getENVConfig() {
   }
 }
 
-const { DATABASE_CONFIG } = require(getENVConfig())
+const { DATABASE_CONFIG, SERVER_PORT } = require(getENVConfig())
 
-module.exports = { DATABASE_CONFIG }
+module.exports = { DATABASE_CONFIG, SERVER_PORT }
