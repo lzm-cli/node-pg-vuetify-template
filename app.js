@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const model = require('./model')
-const { SERVER_PORT } = require('./config')
+const { port } = require('./config.json')
 
 
 app.use((req, res, next) => {
@@ -30,6 +30,6 @@ app.post('/api/test', async (req, res) => {
   return res.json({ data: 'ok' })
 })
 
-app.listen(SERVER_PORT, () => {
-  console.log(`Server started on ${SERVER_PORT}`)
+app.listen(port, () => {
+  console.log(`Server started on ${port}`)
 })
